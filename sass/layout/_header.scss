@@ -122,11 +122,25 @@
   align-items: center;
 }
 
+.menu {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
 .header-contacts {
+  display: none;
+
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: 80px;

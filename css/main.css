@@ -123,8 +123,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 70ms;
-  margin-right: 140px;
-  margin-left: 140px;
+  margin: 0 auto;
   margin-top: 20px;
 }
 
@@ -322,6 +321,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 206px;
+  margin: 0 auto;
 }
 
 .footer-list-link {
@@ -709,8 +709,28 @@ body {
   align-items: center;
 }
 
+.menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
+
 .menu__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-contacts {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -786,6 +806,7 @@ body {
 
 .benefits-list {
   margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -836,6 +857,7 @@ body {
 
 .benefits {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1074,14 +1096,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-}
-
-@media screen and (min-width: 480px) {
-  .title-clients {
-    font-size: 28px;
-    line-height: 1.17;
-    margin-bottom: 30px;
-  }
+  font-size: 28px;
+  line-height: 1.83;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1205,8 +1222,6 @@ body {
 
 .footer-icon-container {
   margin-top: 60px;
-  padding-right: 137px;
-  padding-left: 137px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1344,10 +1359,17 @@ body {
 }
 
 .port-gallery-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  flex-wrap: nowrap;
   margin-left: -30px;
   margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .port-gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .gallery-shadow {
@@ -1369,6 +1391,12 @@ body {
 @media screen and (min-width: 768px) {
   .port-bottom {
     padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .port-bottom {
+    padding-bottom: 20px;
   }
 }
 
