@@ -62,8 +62,6 @@
 .menu-contacts {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
   display: flex;
@@ -80,6 +78,17 @@
   &:focus {
     color: var(--accent-color);
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.16;
+    margin: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -115,4 +124,15 @@
 
 .menu__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-contacts {
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }

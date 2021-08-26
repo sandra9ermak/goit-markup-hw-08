@@ -61,9 +61,21 @@
   }
 
   @media screen and (min-width: 1200px) {
-    justify-content: left;
     text-align: left;
-    flex-wrap: nowrap;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-left: 89px;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
   }
 }
 
@@ -72,10 +84,18 @@
   padding-right: 137px;
   padding-left: 137px;
 
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+    padding-left: 0px;
+    margin-left: 165px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-right: 92px;
     margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -132,6 +152,10 @@
 
 .footer-contacts-container {
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-send-icon {

@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
 }
 
 .social-list-link {
@@ -21,6 +25,18 @@
   &:hover,
   &:focus {
     background-color: #2196f3;
+  }
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
   }
 }
 

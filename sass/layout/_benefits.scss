@@ -1,6 +1,5 @@
 .benefits-list {
   margin-left: -30px;
-  padding-top: 60px;
 
   @media screen and (min-width: 480px) {
     display: block;
@@ -38,9 +37,7 @@
 }
 
 .benefits {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-  }
+  padding-top: 60px;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
