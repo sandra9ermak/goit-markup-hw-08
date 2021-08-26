@@ -216,6 +216,10 @@
   justify-content: space-between;
   height: 100%;
   min-height: 250px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-menu-button {
