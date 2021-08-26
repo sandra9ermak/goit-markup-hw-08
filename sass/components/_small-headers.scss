@@ -1,0 +1,45 @@
+.small-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefits-list__title {
+  margin-bottom: 10px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+  width: 370px;
+  height: 70px;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  overflow: auto;
+}
+
+.title-footer-icon {
+  font-style: normal;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-mail-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+}

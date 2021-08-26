@@ -1,0 +1,115 @@
+.our-team {
+  background-color: #f5f4fa;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+    padding-top: 64px;
+  }
+}
+
+.title-our-team {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.team-list {
+  margin-left: -30px;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin-bottom: -30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.staff-list {
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    max-height: 622px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
+}
+
+.img-teamcard {
+  width: 100%;
+  height: 100%;
+}
+
+.shadow {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.co-worker {
+  text-align: center;
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 480px) {
+    padding: 30px 120px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 70px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+  }
+}
+
+.name-our-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.profession-our-team {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 16px;
+}

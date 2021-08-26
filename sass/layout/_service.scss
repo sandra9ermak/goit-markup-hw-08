@@ -1,0 +1,52 @@
+.service {
+  background-size: cover;
+  margin: 0 auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('/img/header_img_mobile.jpg');
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/img/header_img_tablet.jpg');
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/img/img_header_desktop.jpg');
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.service-header {
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 26px;
+  line-height: 1.61;
+  max-width: 360px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.61;
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
+}

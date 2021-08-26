@@ -1,0 +1,20 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 90px;
+  }
+}
+
+.logo-theme-dark {
+  color: #fff;
+}
+
+.logo-theme-light {
+  color: #000;
+}
