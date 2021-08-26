@@ -3,19 +3,19 @@
   margin: 0 auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('/img/header_img_mobile.jpg');
+    url('../img/header_img_mobile.jpg');
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/img/header_img_tablet.jpg');
+      url('../img/header_img_tablet.jpg');
   }
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/img/img_header_desktop.jpg');
+      url('../img/header_img_desktop.jpg');
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
