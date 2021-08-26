@@ -26,9 +26,8 @@
             <nav class="nav">
                 <a href="index.html" class="logo-header link" lang="en">Web<span class="logo-theme-light">Studio</span></a>
                 <ul class="menu list">
-                    <li class="menu__item"><a href="index.html" class="menu__link link">Студия</a></li>
-                    <li class="menu__item"><a href="portfolio.html" class="menu__link link current active">Портфолио</a>
-                    </li>
+                    <li class="menu__item"><a href="index.html" class="menu__link link current active">Студия</a></li>
+                    <li class="menu__item"><a href="portfolio.html" class="menu__link link">Портфолио</a></li>
                     <li class="menu__item"><a href="" class="menu__link link">Контакты</a></li>
                 </ul>
             </nav>
@@ -48,11 +47,61 @@
                         +38 096 111 1111</a>
                 </li>
             </ul>
+    
+            <button type="button" class="header-menu-button">
+                <svg height="40" width="40">
+                    <use href="svg/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+    
+        <div class="mobile-vers-menu is-hidden">
+            <div class="mob-menu-container">
+                <button type="button" class="mobile-menu-button">
+                    <svg height="18" width="18">
+                        <use href="svg/sprite.svg#close-button-mobile"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-vers-nav">
+                    <ul class="mobile-menu list">
+                        <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link link current">Студия</a>
+                        </li>
+                        <li class="mobile-menu-item"><a href="portfolio.html" class="mobile-menu-link link">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="mob-menu-block">
+                    <ul class="mobile-contacts-list list">
+                        <li class="mobile-contacts-item">
+                            <a href="mailto:info@devstudio.com" class="mobile-contacts mob-mail link">
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="mobile-contacts-item">
+                            <a href="tel:+380961111111" class="mobile-contacts mob-tel link">
+                                +38 096 111 1111</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-social-list list">
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link link">Instagram</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link link">Twitter</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link link">Facebook</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-
         <!-- BUTTON SECTION -->
         <section class="port-gallery-button">
             <div class="container">
@@ -81,8 +130,8 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_mobile1.jpg" media="(min-width: 480px)">
                                     <source srcset="img/img_port_tablet1.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile1.jpg" media="(min-width: 480px)">
                                 <img src="img/img1.jpg" alt="img1" width="370" height="294" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
@@ -99,8 +148,8 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_mobile2.jpg" media="(min-width: 480px)">
                                     <source srcset="img/img_port_tablet2.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile2.jpg" media="(min-width: 480px)">                                    
                                 <img src="img/img2.jpg" alt="img2" width="370" height="294" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
@@ -118,8 +167,8 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_mobile3.jpg" media="(min-width: 480px)">
                                     <source srcset="img/img_port_tablet3.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile3.jpg" media="(min-width: 480px)">                                    
                                 <img src="img/img3.jpg" alt="img3" width="370" height="294" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
@@ -137,8 +186,8 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_mobile4.jpg" media="(min-width: 480px)">
                                     <source srcset="img/img_port_tablet4.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile4.jpg" media="(min-width: 480px)">                                
                                 <img src="img/img4.jpg" alt="img4" width="370" height="294" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
@@ -155,8 +204,8 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_mobile5.jpg" media="(min-width: 480px)">
                                     <source srcset="img/img_port_tablet5.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile5.jpg" media="(min-width: 480px)">                                
                                 <img src="img/img5.jpg" alt="img5" width="370" height="294" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
@@ -173,8 +222,8 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_mobile6.jpg" media="(min-width: 480px)">
                                     <source srcset="img/img_port_tablet6.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile6.jpg" media="(min-width: 480px)">                                
                                 <img src="img/img6.jpg" alt="img6" width="370" height="294" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
@@ -191,8 +240,8 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_mobile7.jpg" media="(min-width: 480px)">
                                     <source srcset="img/img_port_tablet7.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile7.jpg" media="(min-width: 480px)">                                
                                 <img src="img/img7.jpg" alt="img7" width="370" height="294" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
@@ -209,8 +258,8 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_mobile8.jpg" media="(min-width: 480px)">
                                     <source srcset="img/img_port_tablet8.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile8.jpg" media="(min-width: 480px)">                                
                                 <img src="img/img8.jpg" alt="img8" width="370" height="294" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
@@ -227,8 +276,8 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_mobile9.jpg" media="(min-width: 480px)">
                                     <source srcset="img/img_port_tablet9.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile9.jpg" media="(min-width: 480px)">                                
                                 <img src="img/img9.jpg" alt="img9" width="370" height="294" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
@@ -317,6 +366,8 @@
     </form>
     </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
