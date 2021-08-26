@@ -780,6 +780,18 @@ body {
   color: #212121;
 }
 
+.mobile-menu-link:hover, .mobile-menu-link:focus {
+  color: var(--accent-color);
+}
+
+.mobile-contacts-lis {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts-item:not(last-child) {
+  margin-bottom: 32px;
+}
+
 .mobile-contacts {
   font-style: normal;
   font-weight: 500;
@@ -798,7 +810,9 @@ body {
 }
 
 .mobile-vers-menu.is-hidden {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .mob-menu-container {
@@ -828,12 +842,12 @@ body {
   border: none;
 }
 
-.mob-mail {
+.mob-tel {
   font-size: 34px;
   line-height: 40px;
 }
 
-.mob-tel {
+.mob-mail {
   font-size: 24px;
   line-height: 28px;
 }
@@ -858,8 +872,15 @@ body {
 
 .mob-social-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-left: 10px;
   padding-right: 10px;
+}
+
+.mob-social-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .service {
@@ -875,9 +896,6 @@ body {
 @media screen and (min-width: 768px) {
   .service {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/header_img_tablet.jpg");
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
   }
 }
 
@@ -1433,8 +1451,15 @@ body {
 }
 
 .port-gallery-button {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .port-gallery-button {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .port-nav {
