@@ -13,7 +13,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/img/header-mobile-@2x.jpg');
+      url('../img/header-mobile-@2x.jpg');
   }
 
   @media screen and (min-width: 768px) {
@@ -25,7 +25,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/img/header-tablet-@2x.jpg');
+        url('../img/header-tablet-@2x.jpg');
     }
   }
 
@@ -41,7 +41,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('/img/header-desktop-@2x.jpg');
+        url('../img/header-desktop-@2x.jpg');
     }
   }
 }
