@@ -638,7 +638,7 @@ body {
   display: block;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 70ms;
 }
 
@@ -827,11 +827,17 @@ body {
   z-index: 100;
   overflow: auto;
   transform: translateX(100%);
-  transition: transform 1500ms linear;
+  transition: transform 250ms linear;
 }
 
 .mobile-vers-menu.is-open {
   transform: translateX(0%);
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-vers-menu {
+    display: none;
+  }
 }
 
 .mob-menu-container {
@@ -1611,7 +1617,7 @@ body {
 
 .port-img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .port-overlay {
@@ -1631,7 +1637,7 @@ body {
   padding: 63px 24px;
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-hover-window {

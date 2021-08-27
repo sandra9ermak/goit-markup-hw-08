@@ -102,7 +102,7 @@
 
 .port-img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .port-overlay {
@@ -123,7 +123,7 @@
 
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-hover-window {
