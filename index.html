@@ -49,16 +49,16 @@
                 </li>
             </ul>
 
-            <button type="button" class="header-menu-button">
+            <button type="button" class="header-menu-button" data-menu-open>
                 <svg class="header-icon-menu" height="40" width="40">
                     <use href="svg/sprite.svg#icon-menu"></use>
                 </svg>
             </button>
         </div>
 
-        <div class="mobile-vers-menu is-hidden">
+        <div class="mobile-vers-menu" data-menu>
             <div class="mob-menu-container">
-            <button type="button" class="mobile-menu-button">
+            <button type="button" class="mobile-menu-button" data-menu-close>
                 <svg class="header-icon-close-btn" height="18" width="18">
                     <use href="svg/sprite.svg#close-button-mobile"></use>
                 </svg>
@@ -162,16 +162,35 @@
             <div class="container">
                 <h2 class="title-about-us">Чем мы занимаемся</h2>
                 <ul class="about-us-list">
-                    <li class="list img-about-us"><img src="img/box1.jpg" alt="box1" width="370" height="294"
-                            class="img1-about-us">
+                    <li class="list img-about-us">
+                        <picture>
+                            <source srcset="img/about-us1-desktop.jpg 1x, img/about-us1-desktop-@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            <source srcset="img/about-us1-desktop.webp 1x, img/about-us1-desktop-@2x.webp 2x" 
+                                media="(min-width: 1200px)">
+                            <img src="#" alt="box1" class="img1-about-us">
+                        </picture>
                         <p class="small-title overlay">Десктопные приложения</p>
                     </li>
-                    <li class="list img-about-us"><img src="img/box2.jpg" alt="box2" width="370" height="294"
+                    <li class="list img-about-us">
+                        <picture>
+                            <source srcset="img/about-us2-desktop.jpg 1x, img/about-us2-desktop-@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            <source srcset="img/about-us2-desktop.webp 1x, img/about-us2-desktop-@2x.webp 2x" 
+                                media="(min-width: 1200px)">
+                        <img src="#" height="294"
                             class="img2-about-us">
+                        </picture>
                         <p class="small-title overlay">Мобильные приложения</p>
                     </li>
-                    <li class="list img-about-us"><img src="img/box3.jpg" alt="box3" width="370" height="294"
-                            class="img3-about-us">
+                    <li class="list img-about-us">
+                        <picture>
+                            <source srcset="img/about-us3-desktop.jpg 1x, img/about-us3-desktop-@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            <source srcset="img/about-us3-desktop.webp 1x, img/about-us3-desktop-@2x.webp 2x" 
+                                media="(min-width: 1200px)">
+                        <img src="#" height="294" class="img3-about-us">
+                        </picture>
                         <p class="small-title overlay">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -186,9 +205,24 @@
                     <li class="staff-list">
                         <div class="shadow">
                             <picture>
-                                <source srcset="img/teamcard_mobile1.jpg" media="(min-width: 480px)">
-                                <source srcset="img/teamcard_desktop1.jpg" media="(min-width: 768px)">
-                            <img src="img/teamcard1.jpg" alt="Игорь Демьяненко" width="270" height="260" class="img-teamcard">
+                                <!-- <source srcset="img/teamcard_desktop1.jpg" media="(min-width: 768px)"> -->
+                                <source srcset="img/person1-desktop.jpg 1x, img/person1-desktop-@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source srcset="img/person1-desktop.webp 1x, img/person1-desktop-@2x.webp 2x" 
+                                    media="(min-width: 1200px)">
+
+                                <source srcset="img/person1-tablet.jpg 1x, img/person1-tablet-@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source srcset="img/person1-tablet.webp 1x, img/person1-tablet-@2x.webp 2x" 
+                                    media="(min-width: 768px)">
+
+                                <source srcset="img/person1-mobile.jpg 1x, img/person1-mobile-@2x.jpg 2x"
+                                    media="(min-width: 480px)">
+                                <source srcset="img/person1-mobile.webp 1x, img/person1-mobile-@2x.webp 2x" 
+                                    media="(min-width: 480px)">
+                                
+                                <!-- <source srcset="img/teamcard_mobile1.jpg" media="(min-width: 480px)">  -->                               
+                            <img src="#" alt="Игорь Демьяненко" class="img-teamcard">
                             </picture>
                             <div class="co-worker">
                                 <h3 class="name-our-team">Игорь Демьяненко</h3>
@@ -229,9 +263,24 @@
                     <li class="staff-list">
                         <div class="shadow">
                             <picture>
-                                <source srcset="img/teamcard_mobile2.jpg" media="(min-width: 480px)">
-                                <source srcset="img/teamcard_desktop2.jpg" media="(min-width: 768px)">
-                            <img src="img/teamcard2.jpg" alt="Ольга Репина" width="270" height="260" class="img-teamcard">
+                                <!-- <source srcset="img/teamcard_desktop2.jpg" media="(min-width: 768px)"> -->
+                                <source srcset="img/person2-desktop.jpg 1x, img/person2-desktop-@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source srcset="img/person2-desktop.webp 1x, img/person2-desktop-@2x.webp 2x" 
+                                    media="(min-width: 1200px)">
+
+                                <source srcset="img/person2-tablet.jpg 1x, img/person2-tablet-@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source srcset="img/person2-tablet.webp 1x, img/person2-tablet-@2x.webp 2x" 
+                                    media="(min-width: 768px)">
+
+                                <source srcset="img/person2-mobile.jpg 1x, img/person2-mobile-@2x.jpg 2x" 
+                                    media="(min-width: 480px)">
+                                <source srcset="img/person2-mobile.webp 1x, img/person2-mobile-@2x.webp 2x" 
+                                    media="(min-width: 480px)">
+
+                                <!-- <source srcset="img/teamcard_mobile2.jpg" media="(min-width: 480px)"> -->                            
+                            <img src="#" alt="Ольга Репина" class="img-teamcard">
                             </picture>
                             <div class="co-worker">
                                 <h3 class="name-our-team">Ольга Репина</h3>
@@ -271,10 +320,25 @@
                     </li>
                     <li class="staff-list">
                         <div class="shadow">
-                            <picture>
-                                <source srcset="img/teamcard_mobile3.jpg" media="(min-width: 480px)">
-                                <source srcset="img/teamcard_desktop3.jpg" media="(min-width: 768px)">
-                            <img src="img/teamcard3.jpg" alt="Николай Тарасов" width="270" height="260" class="img-teamcard">
+                            <picture>                                
+                                <!-- <source srcset="img/teamcard_desktop3.jpg" media="(min-width: 768px)"> -->
+                                <source srcset="img/person3-desktop.jpg 1x, img/person3-desktop-@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source srcset="img/person3-desktop.webp 1x, img/person3-desktop-@2x.webp 2x" 
+                                    media="(min-width: 1200px)">
+
+                                <source srcset="img/person3-tablet.jpg 1x, img/person3-tablet-@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source srcset="img/person3-tablet.webp 1x, img/person3-tablet-@2x.webp 2x" 
+                                    media="(min-width: 768px)">
+
+                                <source srcset="img/person3-mobile.jpg 1x, img/person3-mobile-@2x.jpg 2x" 
+                                    media="(min-width: 480px)">
+                                <source srcset="img/person3-mobile.webp 1x, img/person3-mobile-@2x.webp 2x" 
+                                    media="(min-width: 480px)">
+
+                                <!-- <source srcset="img/teamcard_mobile3.jpg" media="(min-width: 480px)"> -->
+                            <img src="#" alt="Николай Тарасов" class="img-teamcard">
                             </picture>
                             <div class="co-worker">
                                 <h3 class="name-our-team">Николай Тарасов</h3>
@@ -315,9 +379,24 @@
                     <li class="staff-list">
                         <div class="shadow">
                             <picture>
-                                <source srcset="img/teamcard_mobile4.jpg" media="(min-width: 480px)">
-                                <source srcset="img/teamcard_desktop4.jpg" media="(min-width: 768px)">
-                            <img src="img/teamcard4.jpg" alt="Михаил Ермаков" width="270" height="260" class="img-teamcard">
+                                <!-- <source srcset="img/teamcard_desktop4.jpg" media="(min-width: 768px)"> -->
+                                <source srcset="img/person4-desktop.jpg 1x, img/person4-desktop-@2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <source srcset="img/person4-desktop.webp 1x, img/person4-desktop-@2x.webp 2x" 
+                                    media="(min-width: 1200px)">
+
+                                <source srcset="img/person4-tablet.jpg 1x, img/person4-tablet-@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source srcset="img/person4-tablet.webp 1x, img/person4-tablet-@2x.webp 2x" 
+                                    media="(min-width: 768px)">
+
+                                <source srcset="img/person4-mobile.jpg 1x, img/person4-mobile-@2x.jpg 2x" 
+                                    media="(min-width: 480px)">
+                                <source srcset="img/person4-mobile.webp 1x, img/person4-mobile-@2x.webp 2x" 
+                                    media="(min-width: 480px)">
+
+                                <!-- <source srcset="img/teamcard_mobile4.jpg" media="(min-width: 480px)"> -->
+                            <img src="#" alt="Михаил Ермаков" class="img-teamcard">
                             </picture>
                             <div class="co-worker">
                                 <h3 class="name-our-team">Михаил Ермаков</h3>

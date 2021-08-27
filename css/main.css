@@ -45,6 +45,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -411,10 +413,17 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: 95%;
+  height: auto;
   background-color: #fff;
   padding: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -700,8 +709,17 @@ body {
   }
 }
 
-.header-contacts__list:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .header-contacts__list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__list:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
 }
 
 .menu-contacts__mail-icon {
@@ -797,13 +815,6 @@ body {
   color: var(--accent-color);
 }
 
-/* .mobile-vers-menu {
-  display: block;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-} */
 .mobile-vers-menu {
   position: fixed;
   background-color: #fff;
@@ -813,12 +824,13 @@ body {
   top: 0;
   padding: 48px 0;
   z-index: 100;
+  overflow: auto;
+  transform: translateX(100%);
+  transition: transform 1500ms linear;
 }
 
-.mobile-vers-menu.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.mobile-vers-menu.is-open {
+  transform: translateX(0%);
 }
 
 .mob-menu-container {
@@ -896,27 +908,54 @@ body {
   background-size: cover;
   margin: 0 auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header_img_mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header-mobile.jpg");
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .service {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/header-mobile-@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .service {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header_img_tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .service {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/header-tablet-@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .service {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header_img_desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/header-desktop.jpg");
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
 
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .service {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/header-desktop-@2x.jpg");
+  }
+}
+
+/* @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .service {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/img/header-mobile-@2x.jpg');
+  }
+} */
 .service-header {
   font-weight: 900;
   text-align: center;
@@ -1202,21 +1241,15 @@ body {
 }
 
 .client-list-item {
-  margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc(100% / 2 - 30px);
-}
-
-@media screen and (min-width: 480px) {
-  .client-list-item {
-    max-width: 210px;
-  }
+  max-width: 210px;
+  margin-left: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .client-list-item {
     max-width: 226px;
-    flex-basis: calc(100% / 3 - 30px);
   }
 }
 
@@ -1250,6 +1283,8 @@ body {
   flex-wrap: wrap;
   display: flex;
   margin: 0 auto;
+  justify-content: center;
+  margin-left: -30px;
 }
 
 @media screen and (min-width: 1200px) {

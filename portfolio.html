@@ -48,16 +48,16 @@
                 </li>
             </ul>
     
-            <button type="button" class="header-menu-button">
+            <button type="button" class="header-menu-button" data-menu-open>
                 <svg height="40" width="40">
                     <use href="svg/sprite.svg#icon-menu"></use>
                 </svg>
             </button>
         </div>
     
-        <div class="mobile-vers-menu is-hidden">
+        <div class="mobile-vers-menu is-hidden" data-menu>
             <div class="mob-menu-container">
-                <button type="button" class="mobile-menu-button">
+                <button type="button" class="mobile-menu-button" data-menu-close>
                     <svg height="18" width="18">
                         <use href="svg/sprite.svg#close-button-mobile"></use>
                     </svg>
@@ -130,9 +130,24 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_tablet1.jpg" media="(min-width: 768px)">
-                                    <source srcset="img/img_port_mobile1.jpg" media="(min-width: 480px)">
-                                <img src="img/img1.jpg" alt="img1" width="370" height="294" class="port-img">
+                                    <!-- <source srcset="img/img_port_tablet1.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile1.jpg" media="(min-width: 480px)"> -->
+                                        <source srcset="img/card1-desktop.jpg 1x, img/card1-desktop-@2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                        <source srcset="img/card1-desktop.webp 1x, img/card1-desktop-@2x.webp 2x" 
+                                            media="(min-width: 1200px)">
+                                    
+                                    <source srcset="img/card1-tablet.jpg 1x, img/card1-tablet-@2x.jpg 2x"
+                                         media="(min-width: 768px)">
+                                    <source srcset="img/card1-tablet.webp 1x, img/card1-tablet-@2x.webp 2x" 
+                                        media="(min-width: 768px)">
+
+                                    <source srcset="img/card1-mobile.jpg 1x, img/card1-mobile-@2x.jpg 2x" 
+                                        media="(min-width: 480px)">
+                                    <source srcset="img/card1-mobile.webp 1x, img/card1-mobile-@2x.webp 2x" 
+                                        media="(min-width: 480px)">
+
+                                <img src="img/img1.jpg" alt="img1" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -142,15 +157,28 @@
                                 <h3 class="portfolio-img-header">Технокряк</h3>
                                 <p class="portfolio-img-signature">Веб-сайт</p>
                             </div>
-                        </a>
-                    </li>
                     <li class="portfolio-img-list">
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_tablet2.jpg" media="(min-width: 768px)">
-                                    <source srcset="img/img_port_mobile2.jpg" media="(min-width: 480px)">                                    
-                                <img src="img/img2.jpg" alt="img2" width="370" height="294" class="port-img">
+                                    <!-- <source srcset="img/img_port_tablet2.jpg" media="(min-width: 768px)"> -->
+                                    <source srcset="img/card2-desktop.jpg 1x, img/card2-desktop-@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <source srcset="img/card2-desktop.webp 1x, img/card2-desktop-@2x.webp 2x" 
+                                        media="(min-width: 1200px)">
+
+                                    <source srcset="img/card2-tablet.jpg 1x, img/card2-tablet-@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <source srcset="img/card2-tablet.webp 1x, img/card2-tablet-@2x.webp 2x" 
+                                        media="(min-width: 768px)">
+
+                                    <source srcset="img/card2-mobile.jpg 1x, img/card2-mobile-@2x.jpg 2x" 
+                                        media="(min-width: 480px)">
+                                    <source srcset="img/card2-mobile.webp 1x, img/card2-mobile-@2x.webp 2x" 
+                                        media="(min-width: 480px)">
+
+                                    <!-- <source srcset="img/img_port_mobile2.jpg" media="(min-width: 480px)">  -->                                   
+                                <img src="img/img2.jpg" alt="img2" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -167,9 +195,24 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_tablet3.jpg" media="(min-width: 768px)">
-                                    <source srcset="img/img_port_mobile3.jpg" media="(min-width: 480px)">                                    
-                                <img src="img/img3.jpg" alt="img3" width="370" height="294" class="port-img">
+                                    <!-- <source srcset="img/img_port_tablet3.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile3.jpg" media="(min-width: 480px)">  -->  
+                                        <source srcset="img/card3-desktop.jpg 1x, img/card3-desktop-@2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                        <source srcset="img/card3-desktop.webp 1x, img/card3-desktop-@2x.webp 2x" 
+                                            media="(min-width: 1200px)">
+
+                                        <source srcset="img/card3-tablet.jpg 1x, img/card3-tablet-@2x.jpg 2x"
+                                             media="(min-width: 768px)">
+                                        <source srcset="img/card3-tablet.webp 1x, img/card3-tablet-@2x.webp 2x"
+                                             media="(min-width: 768px)">
+
+                                    <source srcset="img/card3-mobile.jpg 1x, img/card3-mobile-@2x.jpg 2x" 
+                                        media="(min-width: 480px)">
+                                    <source srcset="img/card3-mobile.webp 1x, img/card3-mobile-@2x.webp 2x" 
+                                        media="(min-width: 480px)">
+                                    
+                                <img src="#" alt="img3" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -186,9 +229,24 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_tablet4.jpg" media="(min-width: 768px)">
-                                    <source srcset="img/img_port_mobile4.jpg" media="(min-width: 480px)">                                
-                                <img src="img/img4.jpg" alt="img4" width="370" height="294" class="port-img">
+                                    <!-- <source srcset="img/img_port_tablet4.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile4.jpg" media="(min-width: 480px)"> -->    
+                                        <source srcset="img/card4-desktop.jpg 1x, img/card4-desktop-@2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                        <source srcset="img/card4-desktop.webp 1x, img/card4-desktop-@2x.webp 2x" 
+                                            media="(min-width: 1200px)">
+
+                                        <source srcset="img/card4-tablet.jpg 1x, img/card4-tablet-@2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                        <source srcset="img/card4-tablet.webp 1x, img/card4-tablet-@2x.webp 2x" 
+                                            media="(min-width: 768px)">
+
+                                    <source srcset="img/card4-mobile.jpg 1x, img/card4-mobile-@2x.jpg 2x"
+                                         media="(min-width: 480px)">
+                                    <source srcset="img/card4-mobile.webp 1x, img/card4-mobile-@2x.webp 2x" 
+                                        media="(min-width: 480px)">
+                                    
+                                <img src="#" alt="img4" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -204,9 +262,23 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_tablet5.jpg" media="(min-width: 768px)">
-                                    <source srcset="img/img_port_mobile5.jpg" media="(min-width: 480px)">                                
-                                <img src="img/img5.jpg" alt="img5" width="370" height="294" class="port-img">
+                                    <!-- <source srcset="img/img_port_tablet5.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile5.jpg" media="(min-width: 480px)"> -->      
+                                        <source srcset="img/card5-desktop.jpg 1x, img/card5-desktop-@2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                        <source srcset="img/card5-desktop.webp 1x, img/card5-desktop-@2x.webp 2x" 
+                                            media="(min-width: 1200px)">
+
+                                    <source srcset="img/card5-tablet.jpg 1x, img/card5-tablet-@2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                    <source srcset="img/card5-tablet.webp 1x, img/card5-tablet-@2x.webp 2x" 
+                                        media="(min-width: 768px)">
+                                    
+                                    <source srcset="img/card5-mobile.jpg 1x, img/card5-mobile-@2x.jpg 2x" media="(min-width: 480px)">
+                                    <source srcset="img/card5-mobile.webp 1x, img/card5-mobile-@2x.webp 2x" 
+                                        media="(min-width: 480px)">
+                                    
+                                <img src="#" alt="img5" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -222,9 +294,24 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_tablet6.jpg" media="(min-width: 768px)">
-                                    <source srcset="img/img_port_mobile6.jpg" media="(min-width: 480px)">                                
-                                <img src="img/img6.jpg" alt="img6" width="370" height="294" class="port-img">
+                                    <!-- <source srcset="img/img_port_tablet6.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile6.jpg" media="(min-width: 480px)">  -->  
+                                        <source srcset="img/card6-desktop.jpg 1x, img/card6-desktop-@2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                        <source srcset="img/card6-desktop.webp 1x, img/card6-desktop-@2x.webp 2x" 
+                                            media="(min-width: 1200px)">
+
+                                        <source srcset="img/card6-tablet.jpg 1x, img/card6-tablet-@2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                        <source srcset="img/card6-tablet.webp 1x, img/card6-tablet-@2x.webp 2x" 
+                                            media="(min-width: 768px)">
+
+                                    <source srcset="img/card6-mobile.jpg 1x, img/card6-mobile-@2x.jpg 2x" 
+                                        media="(min-width: 480px)">
+                                    <source srcset="img/card6-mobile.webp 1x, img/card6-mobile-@2x.webp 2x" 
+                                        media="(min-width: 480px)">
+                                    
+                                <img src="#" alt="img6" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -240,9 +327,24 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_tablet7.jpg" media="(min-width: 768px)">
-                                    <source srcset="img/img_port_mobile7.jpg" media="(min-width: 480px)">                                
-                                <img src="img/img7.jpg" alt="img7" width="370" height="294" class="port-img">
+                                    <!-- <source srcset="img/img_port_tablet7.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile7.jpg" media="(min-width: 480px)"> -->      
+                                    <source srcset="img/card7-desktop.jpg 1x, img/card7-desktop-@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    <source srcset="img/card7-desktop.webp 1x, img/card7-desktop-@2x.webp 2x" 
+                                        media="(min-width: 1200px)">
+                                    
+                                        <source srcset="img/card7-tablet.jpg 1x, img/card7-tablet-@2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                        <source srcset="img/card7-tablet.webp 1x, img/card7-tablet-@2x.webp 2x" 
+                                            media="(min-width: 768px)">
+
+                                    <source srcset="img/card7-mobile.jpg 1x, img/card7-mobile-@2x.jpg 2x" 
+                                        media="(min-width: 480px)">
+                                    <source srcset="img/card7-mobile.webp 1x, img/card7-mobile-@2x.webp 2x" 
+                                        media="(min-width: 480px)">
+                                    
+                                <img src="#" alt="img7" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -258,9 +360,24 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_tablet8.jpg" media="(min-width: 768px)">
-                                    <source srcset="img/img_port_mobile8.jpg" media="(min-width: 480px)">                                
-                                <img src="img/img8.jpg" alt="img8" width="370" height="294" class="port-img">
+                                    <!-- <source srcset="img/img_port_tablet8.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile8.jpg" media="(min-width: 480px)"> -->  
+                                        <source srcset="img/card8-desktop.jpg 1x, img/card8-desktop-@2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                        <source srcset="img/card8-desktop.webp 1x, img/card8-desktop-@2x.webp 2x" 
+                                            media="(min-width: 1200px)">
+
+                                        <source srcset="img/card8-tablet.jpg 1x, img/card8-tablet-@2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                        <source srcset="img/card8-tablet.webp 1x, img/card8-tablet-@2x.webp 2x" 
+                                            media="(min-width: 768px)">
+
+                                    <source srcset="img/card8-mobile.jpg 1x, img/card8-mobile-@2x.jpg 2x" 
+                                        media="(min-width: 480px)">
+                                    <source srcset="img/card8-mobile.webp 1x, img/card8-mobile-@2x.webp 2x" 
+                                        media="(min-width: 480px)">
+                                    
+                                <img src="#" alt="img8" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -276,9 +393,24 @@
                         <a href="#" class="gallery-shadow link">
                             <div class="port-hover-window">
                                 <picture>
-                                    <source srcset="img/img_port_tablet9.jpg" media="(min-width: 768px)">
-                                    <source srcset="img/img_port_mobile9.jpg" media="(min-width: 480px)">                                
-                                <img src="img/img9.jpg" alt="img9" width="370" height="294" class="port-img">
+                                    <!-- <source srcset="img/img_port_tablet9.jpg" media="(min-width: 768px)">
+                                    <source srcset="img/img_port_mobile9.jpg" media="(min-width: 480px)">   -->  
+                                        <source srcset="img/card9-desktop.jpg 1x, img/card9-desktop-@2x.jpg 2x" 
+                                            media="(min-width: 1200px)">
+                                        <source srcset="img/card9-desktop.webp 1x, img/card9-desktop-@2x.webp 2x" 
+                                            media="(min-width: 1200px)">
+
+                                        <source srcset="img/card>-tablet.jpg 1x, img/card>-tablet-@2x.jpg 2x" 
+                                            media="(min-width: 768px)">
+                                        <source srcset="img/card>-tablet.webp 1x, img/card>-tablet-@2x.webp 2x" 
+                                            media="(min-width: 768px)">
+
+                                    <source srcset="img/card9-mobile.jpg 1x, img/card9-mobile-@2x.jpg 2x" 
+                                        media="(min-width: 480px)">
+                                    <source srcset="img/card9-mobile.webp 1x, img/card9-mobile-@2x.webp 2x" 
+                                        media="(min-width: 480px)">
+                                    
+                                <img src="#" alt="img9" class="port-img">
                                 </picture>
                                 <p class="port-overlay">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
