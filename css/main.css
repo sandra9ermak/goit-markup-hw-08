@@ -414,7 +414,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 95%;
-  height: auto;
+  height: 100%;
   background-color: #fff;
   padding: 40px;
 }
