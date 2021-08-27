@@ -76,6 +76,8 @@
   display: block;
   margin: auto;
   border: none;
+  max-width: 200px;
+  max-height: 50%;
 
   transition-property: background;
   transition-duration: 250ms;

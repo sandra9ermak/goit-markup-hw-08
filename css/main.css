@@ -157,6 +157,8 @@ body {
   display: block;
   margin: auto;
   border: none;
+  max-width: 200px;
+  max-height: 50%;
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -276,7 +278,7 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   transition-property: background;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 70ms;
 }
@@ -304,7 +306,7 @@ body {
 .social-list-icon {
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 70ms;
 }
@@ -331,7 +333,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
   transition-property: background;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 70ms;
 }
@@ -550,8 +552,8 @@ body {
 .modal-form-checkbox-label::before {
   display: block;
   content: '';
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 16px;
   border: 2px solid #212121;
   border-radius: 2px;
   cursor: pointer;
@@ -652,6 +654,18 @@ body {
 }
 
 .menu__link:hover, .menu__link:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-menu-link:hover, .mobile-menu-link:focus {
   color: var(--accent-color);
 }
 
@@ -783,19 +797,6 @@ body {
   }
 }
 
-.mobile-menu-link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.mobile-menu-link:hover, .mobile-menu-link:focus {
-  color: var(--accent-color);
-}
-
 .mobile-contacts-list {
   margin-bottom: 64px;
 }
@@ -866,7 +867,7 @@ body {
 
 .mob-tel {
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.17;
 }
 
 .mob-mail {
@@ -881,10 +882,17 @@ body {
 .mob-social-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .mob-social-link {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .mob-menu-block {
@@ -905,6 +913,7 @@ body {
 }
 
 .service {
+  max-width: 1600px;
   background-size: cover;
   margin: 0 auto;
   background-color: #c4c4c4;
@@ -1303,7 +1312,7 @@ body {
   border-radius: 4px;
   fill: #afb1b8;
   transition-property: border, fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 70ms;
 }
@@ -1567,16 +1576,19 @@ body {
   padding: 20px 24px;
 }
 
-@media screen and (min-width: 768px) {
-  .port-bottom {
-    padding-bottom: 56px;
-  }
+.div-hover {
+  flex-shrink: 0;
 }
 
-@media screen and (min-width: 1200px) {
-  .port-bottom {
-    padding-bottom: 20px;
-  }
+.sign-hover {
+  width: 100%;
+  height: 100%;
+}
+
+.link-hover {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .portfolio-img-list {

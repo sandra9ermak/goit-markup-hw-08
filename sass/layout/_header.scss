@@ -61,6 +61,19 @@
   }
 }
 
+.mobile-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
 .current {
   color: var(--accent-color);
 }
@@ -179,20 +192,6 @@
   }
 }
 
-.mobile-menu-link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
-  color: #212121;
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
 .mobile-contacts-list {
   margin-bottom: 64px;
 }
@@ -264,7 +263,7 @@
 
 .mob-tel {
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.17;
 }
 
 .mob-mail {
@@ -279,10 +278,15 @@
 .mob-social-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .mob-menu-block {
